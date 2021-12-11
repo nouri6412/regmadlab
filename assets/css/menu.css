@@ -1,0 +1,194 @@
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+nav {}
+
+nav dl, nav ol, nav ul {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+nav .main-menu {
+  direction: rtl;
+  padding-right: 50px;
+}
+
+nav .main-menu li ul {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  right: 80%;
+  width: max-content;
+  z-index: 1000;
+  /* border: 1px solid #c7c5c5; */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  top: 38px;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out;
+  -ms-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+nav .main-menu > li > ul
+{
+  right: 0%;
+}
+
+nav .main-menu li:hover>ul {
+  opacity: 1;
+  visibility: visible;
+}
+
+nav .main-menu > li {
+  border: 1px solid #fff;
+}
+
+
+nav .main-menu > li:hover {
+  border: 1px solid #c7c5c5;
+  border-bottom: 1px solid #fff;
+}
+
+nav ul {}
+
+nav li ul {}
+
+nav li ul li {
+  width: 100%;
+  background: #fff;
+  /* border-top: 1px solid #c7c5c5; */
+}
+
+nav li ul li:first-child {
+  border-top: 0px solid #c7c5c5;
+}
+
+nav li ul li:hover {
+  background-color: #4daeed;
+}
+
+nav li ul li:hover>a, nav li ul li:hover>a::after {
+  color: #fff;
+}
+
+nav li ul li.menu-item-has-children>a::after {
+  content: '';
+  border: solid #b7b7b7;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 8px 10px 8px 5px;
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  margin-right: 4px;
+  position: absolute;
+  left: 14px;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 5px 8px 5px;
+  background: #fff;
+  position: relative;
+}
+
+nav a {}
+
+nav button.btn {
+  display: none;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+
+  nav ul li {
+    display: block;
+  }
+
+  nav .main-menu li ul {
+    opacity: 1;
+    visibility: visible;
+    position: initial;
+    /* right: 80%; */
+    width: max-content;
+    z-index: 1000;
+    border: 1px solid #c7c5c5;
+    box-shadow: none;
+    /* top: 38px; */
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -ms-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  nav .main-menu li:hover>ul {
+    opacity: 0;
+    visibility: visible;
+  }
+
+  nav button.btn-open {
+    display: block;
+    margin: 8px;
+  }
+
+  nav .btn-open .fa {
+    color: #fff;
+  }
+
+  nav .btn-close {
+    margin: 8px;
+    display: none;
+    position: fixed;
+    top: 50px;
+    left: 19%;
+    font-size: 24px;
+    z-index: 1000;
+  }
+
+  nav .main-menu {
+
+    position: fixed;
+    width: 81%;
+    right: -85%;
+    top: 0px;
+    padding-top: 95px;
+    background: #fff;
+    border-left: 2px solid #080808;
+    height: 100%;
+    transition: all 0.5s ease-in-out;
+  }
+
+  nav {}
+
+  nav li {}
+
+  nav li ul {}
+
+  nav li ul li {}
+}
