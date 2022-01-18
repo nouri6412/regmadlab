@@ -28,57 +28,6 @@
 </head>
 
 <body>
-    <?php wp_body_open(); ?>
-    <div class="header white">
-        <div class="header-top">
-            <a class="link-logo" href="#">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.webp" />
-            </a>
-            <div class="search-box">
-                <button class="input-submit">
-                    <i class="fa fa-search"></i>
-                    <span>جستجو</span>
-                </button>
 
-                <input class="input-text" />
-                <select>
-                    <option>تولید کنندگان</option>
-                    <option>کارکرده</option>
-                    <option>وارد کنندگان</option>
-                </select>
-            </div>
-            <div class="top-nav">
-                <?php
-                $menuLocations = get_nav_menu_locations();
 
-                $menuID = $menuLocations['top-right'];
-
-                $primaryNav = wp_get_nav_menu_items($menuID);
-                foreach ($primaryNav as $navItem) {
-                    if ($navItem->menu_item_parent == 0) {
-                        //  echo '<img src="'.get_field( 'menu_back_image', $navItem ).'" />';
-                        echo sprintf('<a href="%s" title="%s">%s</a>', $navItem->url, $navItem->title, ' ' . $navItem->title . ' ');
-                    }
-                }
-
-                ?>
-
-            </div>
-
-        </div>
-        <div class="header-down">
-            <nav class="nav-main">
-                <button class="btn btn-primary btn-open"><i class="fa fa-bars"></i></button>
-                <button class="btn btn-primary btn-close"></button>
-                <?php
-                wp_nav_menu(array(
-                    'theme_location' => 'top-main',
-                    'container' => false,
-                    'menu_class' => 'main-menu'
-                ));
-                ?>
-            </nav>
-
-        </div>
-    </div>
     

@@ -1,0 +1,137 @@
+@font-face {
+  font-family: "yekan";
+  src: url(../fonts/Yekan.eot);
+  src: url(../fonts/Yekan.eot?#iefix) format("embedded-opentype"), url(../fonts/Yekan.woff) format("woff"), url(../fonts/Yekan.ttf) format("truetype"), url(../fonts/Yekan.svg#BYekan) format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Vazir';
+  src: url('../fonts/Vazir-Medium-FD-WOL.eot');
+  src: url('../fonts/Vazir-Medium-FD-WOL.eot?#iefix') format('embedded-opentype'), url('../fonts/Vazir-Medium-FD-WOL.woff2') format('woff2'), url('../fonts/Vazir-Medium-FD-WOL.woff') format('woff'), url('../fonts/Vazir-Medium-FD-WOL.ttf') format('truetype');
+  font-weight: normal;
+}
+
+body {
+  font-family: Vazir, yekan;
+  text-align: right;
+  width: 230mm;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0;
+  font-size: 12pt;
+  background: rgb(204, 204, 204);
+}
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+.main-page {
+  width: 210mm;
+  min-height: 297mm;
+  margin: 10mm auto;
+  background: white;
+  box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);
+}
+
+.sub-page {
+  padding: 1cm;
+  height: 297mm;
+}
+
+@page {
+  size: A4;
+  margin: 0;
+}
+
+@media print {
+  html, body {
+    width: 210mm;
+    height: 297mm;
+  }
+
+  .main-page {
+    margin: 0;
+    border: initial;
+    border-radius: initial;
+    width: initial;
+    min-height: initial;
+    box-shadow: initial;
+    background: initial;
+    page-break-after: always;
+  }
+}
+
+table {
+  width: 100%;
+  direction: rtl;
+  table-layout: fixed;
+}
+
+tr {}
+
+td {}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: right;
+  padding: 5px;
+}
+
+.no-border, .no-border td {
+  border: 0px solid black;
+}
+
+.border-top {
+  border-top: 1px solid black;
+}
+
+.border-left {
+  border-left: 1px solid black;
+}
+
+.border-right {
+  border-right: 1px solid black;
+}
+
+td img {
+  height: 160px;
+  object-fit: cover;
+}
+
+.lb {
+  font-weight: bold;
+}
+
+.val {
+  margin-right: 6px;
+}
+
+.exmine .lb,.exmine .val,.exmine td{
+font-size: 11px;
+}
+
+
+.title-header, .title-header-h {
+  text-align: center;
+}
+
+.title-header {
+  font-size: 14px;
+}
+
+.zard{
+  background-color: #f9df43;
+}
+
+.done{
+  background-color: #a5ef5b;
+}
+
+.fail{
+  background-color: #f3a68c;
+}

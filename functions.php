@@ -30,7 +30,6 @@ function cw_post_type_customer()
 
     $supports = array(
         'title', // post title
-        'author', // post author
         'thumbnail', // featured images
         'custom-fields', // custom fields
         'post-formats', // post formats
@@ -70,24 +69,23 @@ function cw_post_type_silandr()
 
     $supports = array(
         'title', // post title
-        'author', // post author
-        'thumbnail', // featured images
+        // 'thumbnail', // featured images
         'custom-fields', // custom fields
         'post-formats', // post formats
     );
 
     $labels = array(
-        'name' => _x('سیلندر', 'plural'),
-        'singular_name' => _x('سیلندر', 'singular'),
-        'menu_name' => _x('سیلندر', 'admin menu'),
-        'name_admin_bar' => _x('سیلندر', 'admin bar'),
-        'add_new' => _x('ثبت سیلندر جدید', 'add new'),
-        'add_new_item' => "ثبت سیلندر جدید",
-        'new_item' => "سیلندر جدید",
-        'edit_item' => "ویرایش سیلندر",
-        'view_item' => "مشاهده سیلندر",
-        'all_items' => "همه سیلندر ها",
-        'search_items' => "جستجوی سیلندر",
+        'name' => _x('تحویل سیلندر', 'plural'),
+        'singular_name' => _x('تحویل سیلندر', 'singular'),
+        'menu_name' => _x('تحویل سیلندر', 'admin menu'),
+        'name_admin_bar' => _x('تحویل سیلندر', 'admin bar'),
+        'add_new' => _x('ثبت تحویل سیلندر جدید', 'add new'),
+        'add_new_item' => "ثبت تحویل سیلندر جدید",
+        'new_item' => "تحویل سیلندر جدید",
+        'edit_item' => "ویرایش تحویل سیلندر",
+        'view_item' => "مشاهده تحویل سیلندر",
+        'all_items' => "همه تحویل سیلندر ها",
+        'search_items' => "جستجوی تحویل سیلندر",
         'not_found' => "یافت نشد"
     );
 
@@ -103,3 +101,42 @@ function cw_post_type_silandr()
     register_post_type('silandr', $args);
 }
 add_action('init', 'cw_post_type_silandr');
+
+function cw_post_type_exmine()
+{
+
+    $supports = array(
+        'title', // post title
+        // 'thumbnail', // featured images
+        'custom-fields', // custom fields
+        'post-formats', // post formats
+    );
+
+    $labels = array(
+        'name' => _x('آزمون سیلندر', 'plural'),
+        'singular_name' => _x('آزمون سیلندر', 'singular'),
+        'menu_name' => _x('آزمون سیلندر', 'admin menu'),
+        'name_admin_bar' => _x('آزمون سیلندر', 'admin bar'),
+        'add_new' => _x('ثبت آزمون سیلندر جدید', 'add new'),
+        'add_new_item' => "ثبت آزمون سیلندر جدید",
+        'new_item' => "آزمون سیلندر جدید",
+        'edit_item' => "ویرایش آزمون سیلندر",
+        'view_item' => "مشاهده آزمون سیلندر",
+        'all_items' => "همه آزمون سیلندر ها",
+        'search_items' => "جستجوی آزمون سیلندر",
+        'not_found' => "یافت نشد"
+    );
+
+    $args = array(
+        'supports' => $supports,
+        'labels' => $labels,
+        'public' => true,
+        'query_var' => true,
+        'rewrite' => array('slug' => 'exmine'),
+        'has_archive' => true,
+        'hierarchical' => false,
+    );
+    register_post_type('exmine', $args);
+}
+add_action('init', 'cw_post_type_exmine');
+
