@@ -263,6 +263,8 @@
 
 					</tbody>
 				</table>
+				<br>
+				<div style=" margin-top:20px;text-align: center;">مهر و امضاء</div>
 			</div>
 		</div>
 	<?php
