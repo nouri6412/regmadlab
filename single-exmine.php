@@ -51,7 +51,7 @@
 							<td colspan="2" class="title-header no-border border-top border-left"><span class="lb">تاریخ صدور </span><span class="val"><?php echo get_field("exmine_sodor");  ?></span></td>
 						</tr>
 						<tr>
-							<td class="title-header no-border border-top border-right border-left zard" colspan="8">آدرس آزمایشگاه:جاده سنتو الوارعلیا شماره 57- تلفن:09142222001 ایمیل:reza.ali79@yahoo.com</td>
+							<td class="title-header no-border border-top border-right border-left zard" colspan="8">آدرس آزمایشگاه:جاده سنتو الوارعلیا شماره 57- تلفن:09142222001 ایمیل:madlab.org@gmail.com</td>
 						</tr>
 
 						<tr>
