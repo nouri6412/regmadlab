@@ -59,7 +59,7 @@
 						</tr>
 						<tr>
 							<td class="no-border border-top" colspan="5"><span class="lb">نام شرکت :</span><span class="val"><?php echo get_field("customer_number")->post_title;  ?></span></td>
-							<td class="no-border border-top" colspan="4"><span class="lb"> شماره شناسایی :</span><span class="val"><?php echo  get_field("customer_number")->ID;  ?></span></td>
+							<td class="no-border border-top" colspan="4"><span class="lb"> شماره شناسایی :</span><span class="val"><?php echo  get_field("serial",get_field("customer_number")->ID);  ?></span></td>
 
 						</tr>
 						<tr>
@@ -75,7 +75,7 @@
 						</tr>
 
 						<tr>
-							<td colspan="5"><span class="lb">حجم مخزن</span><span class="val"><?php echo get_field("silandr_value"); ?></span></td>
+							<td colspan="5"><span class="lb">حجم سیلندر</span><span class="val"><?php echo get_field("silandr_value"); ?></span></td>
 							<td colspan="4"><span class="lb"> نوع رزروه سیلندر</span><span class="val"><?php echo get_field("silandr_rezve_type"); ?></span></td>
 						</tr>
 
@@ -214,7 +214,7 @@
 						<tr>
 							<td colspan="1" rowspan="2">سایر</td>
 							<td colspan="1" rowspan="2">تعویض متعلقات</td>
-							<td colspan="2"> شیر مخزن</td>
+							<td colspan="2"> شیر سیلندر</td>
 							<td colspan="2"><?php echo get_field("silandr_change")["silandr_change_shir"]; ?></td>
 							<td colspan="1" rowspan="2">توضیحات</td>
 							<td colspan="3" rowspan="2"> <?php echo get_field("silandr_change")["silandr_change_desc"]; ?></td>
