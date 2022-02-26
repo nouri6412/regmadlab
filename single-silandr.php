@@ -21,9 +21,9 @@
 	while (have_posts()) :
 		the_post();
 	?>
-		<div class="main-page">
-			<div class="sub-page">
-				<table>
+		<div  style="background-color: #fff;"  class="main-page">
+			<div  style="background-color: #fff;"  class="sub-page">
+				<table  style="background-color: #fff;" >
 					<tbody>
 						<tr>
 							<td class="no-border" colspan="3" rowspan="4"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo1.jpg" /></td>
