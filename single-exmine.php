@@ -247,17 +247,7 @@
 						<tr>
 							<td colspan="1" rowspan="3">توضیحات</td>
 							<td colspan="9">
-								<p style="margin-top: 0;    margin-bottom: 0;">1- نتیجه آعلام شده مربوط به نمونه مورد آزمون بوده و فقط برای این نمونه مصداق دارد
-								</p>
-								<p style="margin-top: 0;    margin-bottom: 0;">2- این گواهی بدون مهربرجسته آزمایشگاه و امضا مدیر فنی فاقد اعتبار است
-								</p>
-								<p style="margin-top: 0;    margin-bottom: 0;">3- نتیجه آزمون مختص زمان آزمون بوده و با نگهداری مناسب قابل استفاده میباشد
-								</p>
-								<p style="margin-top: 0;    margin-bottom: 0;">4- اطلاعات مشخصات مشتری و نمونه از اظهارات مشتری گرفته شده است ومسئولیت تناقض آن بعهده مشتری میباشد
-								</p>
-								<p style="margin-top: 0;    margin-bottom: 0;">5- عواقب ناشی از هرگونه تغییر کاربری بعهده مشتری میباشد
-								</p>
-								<p style="margin-top: 0;    margin-bottom: 0;">6- در صورت ذکر نیاز به رنگ آمیزی حتما قبل از استفاده رنگ آمیزی شود</p>
+							<?php echo get_field("dilandr_description"); ?>							
 							</td>
 						</tr>
 						<tr></tr>
